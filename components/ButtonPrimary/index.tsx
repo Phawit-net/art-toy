@@ -4,8 +4,9 @@ import Link from "next/link";
 
 const ButtonPrimary = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Link href="/toy">
-      <button className="btn-primary">{children}</button>
+    // แก้เอา button ออกเพราะ Link เป็น element ที่สามารถคลิกได้อยู่แล้ว
+    <Link href="/toy" className="btn-primary">
+      {children}
     </Link>
   );
 };
